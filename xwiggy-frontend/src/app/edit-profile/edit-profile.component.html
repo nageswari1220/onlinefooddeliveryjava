@@ -1,0 +1,58 @@
+<div class="container body">
+  <br><br><br>
+  <H1 align="center">Edit Profile</H1>
+    <br><br><br>
+    <!-- Form to edit user details -->
+    <div class="container" align="center">
+    <form (ngSubmit)="onSave()">
+      <table>
+      <div class="form-group">
+        <tr>
+        <td><label>Username:</label></td>
+        <td><input  class="form-control" type="text" [(ngModel)]="modelMerchant.username" name="username" disabled></td>
+      </tr>
+      </div>
+      <div  class="form-group">
+        <tr>
+        <td><label>First Name:</label></td>
+        <td><input  class="form-control" type="text" [(ngModel)]="modelMerchant.firstname" name="firstname"></td>
+      </tr>
+      </div>
+      <div  class="form-group">
+      <tr>
+       <td><label>Last Name:</label></td>
+       <td><input  class="form-control" type="text" [(ngModel)]="modelMerchant.lastname" name="lastname"></td>
+      </tr>
+      </div>
+      <div  class="form-group">
+        <tr>
+        <td><label>Email:</label></td>
+        <td><input  class="form-control" type="email" [(ngModel)]="modelMerchant.email" name="email"></td>
+      </tr>
+      </div>
+      <div class="form-group">
+        <tr>
+        <td><label>Phone:</label></td>
+        <td><input  class="form-control" type="number" [(ngModel)]="modelMerchant.phone" name="phone"></td>
+      </tr>
+      </div>
+      <div  class="form-group">
+        <tr>
+        <td><label>Address:</label></td>
+        <td  class="form-control"><textarea [(ngModel)]="modelMerchant.address" name="address"></textarea></td>
+      </tr>
+      </div>
+      
+     <div>
+      <table align="center" style="padding-right:10%">
+      <tr>
+      <td><button type="button" class="bigbutton" (click)="onSave()"><span>save</span></button></td>
+      <td><button type="button" class="bigbutton" (click)="onCancel()"><span>cancel</span></button></td>
+   </tr>
+  </table>
+     </div>
+    </table>
+    </form>
+  </div>
+  </div>
+  

@@ -1,0 +1,59 @@
+<!--<h2>User Feedback Details</h2>
+
+Display the user's contact details (username and email) along with the message
+<div *ngIf="userFeedback && userFeedback.length > 0 && modelUser">
+  <p>Username: {{ modelUser.username }}</p>
+  <p>Email: {{ modelUser.email }}</p>
+  <div *ngFor="let feedback of userFeedback">
+    <p>Message: {{ feedback.message }}</p>
+  </div>
+</div>
+
+<div *ngIf="userFeedback && userFeedback.length === 0">
+  <p>No feedback available.</p>
+</div>-->
+
+
+<!-- ... (existing HTML code) ... -->
+
+<!-- Add a new section to display the contact details within the "Feedback" button -->
+<!--<div *ngIf="contactDetails">
+  <div class="contact-details">
+    <p>Email: {{ contactDetails[1].email }}</p>
+    <p>Name: {{ contactDetails[1].name}}</p>
+    <p>Message: {{ contactDetails[1].message }}</p>
+  </div>
+</div>-->
+<!-- Add a new section to display all contact details within the "Feedback" button -->
+<div *ngIf="contactDetails.length > 0">
+  <div class="contact-details" style="margin-top: 10%;">
+    <h2 align="center">All Contact Details:</h2>
+    <table align="center">
+      <thead>
+        <tr>
+          <th>Email</th>
+          <th>Message</th>
+          <th>Name</th>
+          <!-- Add more table headers here if needed -->
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let contact of contactDetails">
+          <td>{{ contact.email }}</td>
+          <td>{{ contact.message }}</td>
+          <td>{{ contact.name }}</td>
+          <!-- Add more table cells here if needed -->
+        </tr>
+      </tbody>
+    </table>
+    <div class="container" align="center">
+      <button class="bigbutton" routerLink="/merchantWelcome"><span>Go Back</span></button>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+

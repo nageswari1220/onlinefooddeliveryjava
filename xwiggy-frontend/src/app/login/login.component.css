@@ -1,0 +1,78 @@
+html, body{
+  background-image: url("../../assets/images/loginbackground.jpg"); /* Replace the URL with your image path */
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  }
+  
+  img{
+    width: 15%;
+    align-self: center;
+    margin-left: 40%;
+  }
+  
+  .center{
+    margin-top: 5%;
+    margin-left: 35%;
+  }
+
+  .loginbody {
+    background-size:100% 100%;
+    background-repeat:no-repeat;
+    color: black;
+    font: 14px Helvetica, sans-serif;
+  }
+  
+  label {
+    font: bold 20px Helvetica, sans-serif;
+    display: block;
+    float: left;
+    padding: 5px 10px 0 0;
+  }
+  
+  form div {
+    overflow: hidden;
+    margin: 0 0 5px 0;
+  }
+  
+  
+  .bigbutton {
+    border-radius: 4px;
+    background-color: lightseagreen;
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 15px;
+    padding: 20px;
+    width: 120px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+    margin-right: 30px;
+  }
+  
+  .bigbutton span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+  }
+  
+  .bigbutton span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+  }
+  
+  .bigbutton:hover span {
+    padding-right: 25px;
+  }
+  
+  .bigbutton:hover span:after {
+    opacity: 1;
+    right: 0;
+  }
+  

@@ -1,0 +1,78 @@
+/* Styling for the container that holds the contact details */
+.contact-details {
+  margin-top: 20px;
+  color: white;
+}
+
+/* Center align the "All Contact Details" heading */
+h2 {
+  text-align: center;
+}
+
+/* Styling for the table */
+table {
+  width: 80%;
+  margin: 0 auto; /* Center the table */
+  border-collapse: collapse;
+  border: 1px solid #ccc;
+}
+
+/* Styling for the table header (th) */
+thead th {
+  padding: 10px;
+  border: 1px solid #ccc;
+  text-align: left;
+}
+
+/* Styling for the table cells (td) */
+td {
+  padding: 10px;
+  border: 1px solid #ccc;
+  text-align: left;
+}
+
+/* Styling for the "Go Back" button */
+.bigbutton {
+  border-radius: 4px;
+  background-color: lightseagreen;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 15px;
+  padding: 20px;
+  width: 120px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+.bigbutton span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.bigbutton span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.bigbutton:hover span {
+  padding-right: 25px;
+}
+
+.bigbutton:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+/* Center the "Go Back" button */
+td button {
+  display: block;
+  margin: 0 auto;
+}
